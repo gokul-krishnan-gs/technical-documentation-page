@@ -1,0 +1,145 @@
+:root{
+--dark-purple: #160c28ff;
+--naples-yellow: #efcb68ff;
+--honeydew: #e1efe6ff;
+}
+
+*{
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  margin:0;
+  padding:0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+body{
+  background-color: var(--dark-purple);
+}
+
+/*CODE*/
+pre {
+  padding: 15px;
+  border-radius: 5px;      
+  overflow-x: auto; 
+  color: var(--honeydew);
+  background-color: #1f1433;
+}
+
+pre code {
+  font-family: 'Courier New', Courier, monospace;  
+  font-size: 15px;  
+}
+header{
+  color: var(--naples-yellow);
+}
+
+/*NAVIGATION BAR*/
+
+#navbar{
+  position: fixed;
+  top:0;
+  left:0;
+  width: 240px;
+  height: 100vh;
+  background-color: var(--dark-purple);
+  padding: 20px;
+  overflow-y: auto;
+  border-right: 2px solid var(--naples-yellow);
+}
+
+#navbar header{
+  font-size: 22px;
+  font-weight: bold;
+  color: var(--naples-yellow);
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+#navbar .nav-link{
+  display:block;
+  color: var(--honeydew);
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  transition: background 0.3s;
+}
+
+#navbar .nav-link:hover{
+  background-color: var(--naples-yellow);
+  color: var(--dark-purple);
+  font-weight: bold;
+}
+
+#main-doc{
+  margin-left: 240px;
+  padding:20px;
+}
+
+/*SECTION TITLES*/
+
+.main-section header{
+  font-size: 26px;
+  color: var(--naples-yellow);
+  margin-top: 10px;
+  margin-bottom: 15px;
+  border-bottom: 5px solid var(--naples-yellow);
+  padding-bottom: 5px;
+}
+
+/*SECTION PARAGRAPHS*/
+
+.main-section p{
+  font-size: 17px;
+  color: var(--honeydew);
+  line-height: 1.7;
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+/*Bullet points*/
+ul{
+  color: var(--honeydew);
+  margin-left:30px;
+  margin-bottom: 20px;
+}
+
+li{
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+/*RESPONSIVE*/
+@media (max-width: 768px) {
+  #navbar {
+    position: relative;
+    width: 100%;
+    height: auto;
+    border-right: none;
+    border-bottom: 2px solid var(--naples-yellow);
+  }
+
+  #main-doc {
+    margin-left: 0;
+    padding: 15px;
+  }
+
+  #navbar .nav-link {
+    display: block;
+    text-align: center;
+    margin-bottom: 8px;
+  }
+
+  .main-section header{
+     margin-top: 25px;
+  }
+}
+
+
+
+
+
