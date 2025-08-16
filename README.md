@@ -3,7 +3,7 @@
 This is a **Technical Documentation Page** project built using **HTML & CSS**.  
 
 ## 🌐 Live Demo
-👉 [View on GitHub Pages](https://your-username.github.io/your-repo-name/](https://gokul-krishnan-gs.github.io/technical-documentation-page/))
+👉 [View on GitHub Pages](https://gokul-krishnan-gs.github.io/technical-documentation-page/)
 
 ---
 
